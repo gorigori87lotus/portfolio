@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link rel="stylesheet" href="Top.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-list">
+            <ul>
+                <li>
+                    <a href="#top">Top</a>
+                </li>
+                <li>
+                    <a href="#i-am">I_am</a>
+                </li>
+                <li>
+                    <a href="#works">Works</a>
+                </li>
+                <li>
+                    <a href="#draw">Draw</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- キャンバス -->
+    <canvas id="canvas" width="1900" height="1200"></canvas>
+
+    <!-- トップ -->
+    <div id="top">
+        <div class="container">
+            <h1 class="my-name">YUTO YOSHIHARA</h1>
+        </div>
+    </div>
+
+    <!-- 自己紹介 -->
+    <div id="i-am">
+        <div class="container">
+            <div class="about-contents">
+                <div class="about-image"></div>
+            </div>
+            <div class="about-contents">
+                <div class="iam-about">
+                    <div class="about-name">
+                        <h2>吉原悠人　(Yoshihara Yuto)</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>埼玉大学大学院理工学研究科 機械科学系専攻 制御工学研究室 在学</p>
+                        <p>
+                            大学院で超音波振動子を用いた皮膚感覚提示の研究を行いながら、<br>
+                            主にArduino、Raspbrry Pi、TouchDesignerを用いて、<br>
+                            幅広く興味を持ちながら制作しております。<br>
+                            新しい技術を学びながら広い視野を持ち制作に役立ちたいと考えています。
+                        </p>
+                        <p>
+                            できること<br>
+                            C++, Python, Arduino, Raspberry Pi, Touchdesigner, HTML & CSS, Fusin360,<br>
+                            旋盤・フライス加工
+                        </p>
+                        <p>
+                            Contact<br>
+                            Gmail : ame.to.noise@gmail.com
+                        </p>
+                        <p>
+                            SNS<br>
+                            qiita :
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 作品類 -->
+    <div id="works">
+        <div class="container">
+            <ul class="works-list">
+                <li>
+                    <div class="work-icon smelling-icon" id="smelling-show">
+                        <div class="work-tools" id="smelling-tools">
+                            <p class="smelling-tool-text">#Arduino</p>
+                            <p class="smelling-tool-text">#においセンサ</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-icon becaptured-icon" id="becaptured-show">
+                        <div class="work-tools" id="becaptured-tools">
+                            <p class="becaptured-tool-text">#Raspberry Pi</p>
+                            <p class="becaptured-tool-text">#Python</p>
+                            <p class="becaptured-tool-text">#OpenCV</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-icon refusal-icon" id="refusal-show">
+                        <div class="work-tools" id="refusal-tools">
+                            <p class="refusal-tool-text">#Arduino</p>
+                            <p class="refusal-tool-text">#人感センサ</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-icon sounddrawing-icon" id="sounddrawing-show">
+                        <div class="work-tools" id="sounddrawing-tools">
+                            <p class="sounddrawing-tool-text">#TouchDesigner</p>
+                            <p class="sounddrawing-tool-text">#Cubase</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-icon amayadori-icon" id="amayadori-show">
+                        <div class="work-tools" id="amayadori-tools">
+                            <p class="amayadori-tool-text">#TouchDesigner</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- お絵かきゾーン -->
+    <div id="draw">
+        <div class="container">
+            <div class="key-exp">
+                <h3>Wキー : 色無し</h3>
+                <h3>Rキー : リセット</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- 作品モーダル -->
+    <div class="modal-wrapper" id="smelling-modal">
+        <div class="container modal-cont">
+            <div class="close-modal">
+                <h4>Back to Works</h4>
+            </div>
+            <div class="work-contents">
+                <div class="work-image smelling-icon"></div>
+            </div>
+            <div class="work-contents">
+                <div class="about-work">
+                    <div class="work-name">
+                        <h2>SMELLING</h2>
+                    </div>
+                    <div class="work-text">
+                        <p>
+                            Needs & Ideas Forum 2020 ( 医療・福祉系、デザイン系、
+                            工学系の学生がチームを組み、
+                            障碍当事者からの聞き取りを元にニーズを仕様化し、
+                            実際に使える福祉機器を開発するプロジェクト)
+                            で私達のチームが制作した作品です。<br>
+                            障害のある方ない方に関わらずおとなもこどもも愛着を持てるデザイン、
+                            表情を用いたビジュアル表示によるシンプルなにおいのフィードバック
+                            をコンセプトとしたにおいセンサを制作しました。<br>
+                            私はにおいセンサのセンサ周りの電気回路、マイコン制御、<br>
+                            ディスプレイに表情のフィードバックを行いました。<br>
+                        </p>
+                        <p>
+                            使用ツール :　においガスセンサ（TGS2450）, Arduino Nano Every
+                        </p>
+                        <p>
+                            参加プロジェクト：Needs & Ideas Forum for Well-being <br>
+                            関連URL :<a href="http://n-i-f.jp/"> http://n-i-f.jp/</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper" id="becaptured-modal">
+        <div class="container modal-cont">
+            <div class="close-modal">
+                <h4>Back to Works</h4>
+            </div>
+            <div class="work-contents">
+                <div class="work-image becaptured-icon"></div>
+            </div>
+            <div class="work-contents">
+                <div class="about-work">
+                    <div class="work-name">
+                        <h2>Be Captured!!</h2>
+                    </div>
+                    <div class="work-text">
+                        <p>
+                            人が体内に取り込まれたような体験を作りたい、服の外見をリアルタイムで変化させたいと感じたことから、
+                            カメラとディスプレイを用いてまるでひとが服や他の人に取り込まれたような体験をする装置を制作しました。<br />
+
+                            二枚目のような黒いボックスの中にカメラがはいっています。カメラから読み取ったものは一枚目のディスプレイに表示されます。
+                            黒いボックスの下側が開いており、頭を入れることができるようになっています。ボックスの中に入った人の顔がディスプレイに表示されます。
+                            <br />
+
+                            カメラ、ディスプレイの制御をRaspberry Pi で行い、Raspberry Pi内でOpenCV、 Pythonを用いてカメラから得た映像をフィルター処理して表示しています。<br />
+                        </p>
+                        <p>
+                            使用ツール：Raspberry Pi, OpenCV, Python
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper" id="refusal-modal">
+        <div class="container modal-cont">
+            <div class="close-modal">
+                <h4>Back to Works</h4>
+            </div>
+            <div class="work-contents">
+                <div class="work-image refusal-icon"></div>
+            </div>
+            <div class="work-contents">
+                <div class="about-work">
+                    <div class="work-name">
+                        <h2>The Region of Refusal</h2>
+                    </div>
+                    <div class="work-text">
+                        <p>
+                            人には他者に踏み込まれたくない部分があります。
+                            また，その部分に他者が近づき過ぎることを拒む感情というものもあります。
+                            故に少なからず心の距離を近づけることには限界があります。
+                            その様子を人が近づいた時に気配を消す蛍に見立てて作品を制作しました。<br>
+                            人感センサーとLEDをマイコンで制御して制作しました。
+                        </p>
+                        <p>
+                            使用ツール：人感センサー，Arduino Uno
+                        </p>
+                        <p>
+                            関連URL :<a href="https://youtu.be/2c5fBYM5YHA">https://youtu.be/2c5fBYM5YHA</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper" id="sounddrawing-modal">
+        <div class="container modal-cont">
+            <div class="close-modal">
+                <h4>Back to Works</h4>
+            </div>
+            <div class="work-contents">
+                <div class="work-image sounddrawing-icon"></div>
+            </div>
+            <div class="work-contents">
+                <div class="about-work">
+                    <div class="work-name">
+                        <h2>Sound Drawing</h2>
+                    </div>
+                    <div class="work-text">
+                        <p>
+                            TouchDesignerを用いて、PCのキーに音と色を対応させて描画するエフェクトを作成し、映像にしました。<br />
+                            キーボードの0 ~ 9キーを押すと、音が鳴り、その音がなっている間、色が塗られていく仕組みです。-キーを押すと、絵が初期化されます。<br />
+                            意図的なものから生まれる偶然に心惹かれるものがあると私は考えます．
+                            そのため、描画の軌道は無作為になっており、様々な描画パターンが生まれるようにしました。
+                            一つ一つの音が互いに呼び合い、色を紡いでいくイメージで作成しました。
+                        </p>
+                        <p>
+                            使用ツール : TouchDesigner, Cubase
+                        </p>
+                        <p>
+                            関連URL : <a href="https://qiita.com/yoshi_no_hara84/private/8c197a962dcff20230d3">https://qiita.com/yoshi_no_hara84/private/8c197a962dcff20230d3</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper" id="amayadori-modal">
+        <div class="container modal-cont">
+            <div class="close-modal">
+                <h4>Back to Works</h4>
+            </div>
+            <div class="work-contents">
+                <div class="work-image amayadori-icon"></div>
+            </div>
+            <div class="work-contents">
+                <div class="about-work">
+                    <div class="work-name">
+                        <h2>amayadori</h2>
+                    </div>
+                    <div class="work-text">
+                        <p>
+                            TouchDesignerのParticle SOPを用いて静止画に雨の再現を試みました。
+                            写真は自分で撮影し、雨の音はフィールドレコーディングにより録音しました。
+                        </p>
+                        <p>
+                            使用ツール：TouchDesigner，Zoom H6
+                        </p>
+                        <p>
+                            関連URL : <a href="https://youtu.be/iffSsswyQfA">https://youtu.be/iffSsswyQfA</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Top.js"></script>
+    <script src="canvas.js"></script>
+</body>
+</html>
