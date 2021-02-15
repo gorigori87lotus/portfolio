@@ -1,0 +1,258 @@
+/*----- 共通 -----*/
+body {
+    margin: 0;
+    font-family: "Yu Gothic";
+    color: #000000;
+    z-index: 0;
+    font-weight: 600;
+}
+
+.container{
+   width: 100%;
+   height: 1024px;
+   padding: 80px 120px 80px 220px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+li{
+    list-style: none;
+    padding-bottom: 25px;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+        color: #707070;
+        text-decoration: none;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/*----- ヘッダー -------*/
+
+header{
+    z-index:10;
+}
+
+.header-list {
+    
+    margin-left: 30px;
+    margin-top: 60px;
+    position: fixed;
+}
+
+
+
+/*------ キャンバス--------*/
+#canvas {
+    z-index: -1;
+    position: fixed;
+}
+
+/*------ モーダル --------*/
+
+.modal-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 120%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 50;
+    display: none;
+}
+
+.modal-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.close-modal {
+    float: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.work-contents {
+    float: left;
+    width: 50%;
+}
+
+.about-work {
+    margin-left: 80px;
+    color: #ffffff;
+}
+
+.work-name {
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.work-text {
+    width: 483px;
+    font-size: 16px;
+}
+
+.work-text p {
+    margin-bottom: 28px;
+    line-height: 2;
+}
+
+.work-text a{
+    color: #ffffff;
+}
+
+.work-text a:hover{
+    color: #a7aefb;
+}
+
+.work-image {
+    width: 531px;
+    height: 633px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+h4:hover{
+    color: #a7aefb;
+}
+/*----- トップ ------*/
+
+
+.my-name {
+    margin-top: 360px;
+    font-size: 86px;
+    font-family: Meiryo;
+    text-align: right;
+}
+
+/*----- 自己紹介-------*/
+
+
+.about-contents{
+    float: left;
+    width: 50%;
+}
+
+.iam-about {
+    margin-left: 80px;
+}
+
+.about-name {
+    margin-bottom: 65px;
+}
+
+.about-text {
+    width: 483px;
+    font-size: 16px;
+}
+
+.about-text p {
+     margin-bottom: 28px;
+     line-height: 2;
+}
+
+
+.about-image {
+    width: 531px;
+    height: 633px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----- 作品集 -----*/
+
+
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works-list li{
+    flex: auto;
+    width: 33%;
+    margin-bottom: 30px;
+}
+
+
+.work-icon {
+    border-radius: 60px;
+    width: 320px;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.work-tools {
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    padding-top: 15px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 2;
+    display: none;
+}
+
+.smelling-icon {
+    background-image: url("smelling.jpg");
+    background-size: cover;
+}
+
+.becaptured-icon {
+    background-image: url("becaptured.jpg");
+    background-size: cover;
+}
+
+.refusal-icon {
+    background-image: url("Refusal.jpg");
+    background-size: cover;
+}
+
+.sounddrawing-icon {
+    background-image: url("sounddrawing.jpg");
+    background-size: cover;
+}
+
+.amayadori-icon {
+    background-image: url("amayadori.jpg");
+    background-size: cover;
+}
+
+/*----- 絵描き ------*/
+
+h3 {
+    float: left;
+    width: 170px;
+    height: 30px;
+    font-size: 18px;
+    text-align: right;
+    color: #707070;
+    font-weight: 600;
+}
+
+.key-exp {
+    float: right;
+}
