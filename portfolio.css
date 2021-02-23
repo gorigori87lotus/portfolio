@@ -58,7 +58,7 @@ header{
 #canvas {
     z-index: -1;
     position: fixed;
-    background-color: #eeeeee;
+    background-color: #f7f7f7;
 }
 
 /*------ モーダル --------*/
