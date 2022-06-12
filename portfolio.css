@@ -9,6 +9,7 @@ body {
 
 .container{
    width: 100%;
+   min-width:1280px;
    height: 1024px;
    padding: 80px 120px 80px 220px;
    margin-left: auto;
